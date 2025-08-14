@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeswanth Sunkesula - Pega Professional Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .kpi-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#006494] mb-2">Yeswanth Sunkesula</h1>
+            <p class="text-lg md:text-xl text-[#0582CA] font-medium">Pega Certified Senior System Architect | Decisioning & DevOps Specialist</p>
+        </header>
+
+        <section id="kpis" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#006494]">Career Highlights & Key Metrics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="kpi-card p-6 text-center">
+                    <p class="text-6xl font-black text-[#F86624]">40%</p>
+                    <p class="mt-2 text-lg font-semibold text-[#006494]">Boost in Delivery Efficiency</p>
+                    <p class="text-sm text-gray-500 mt-1">Achieved via Situational Layer Cake and reusable rulesets.</p>
+                </div>
+                <div class="kpi-card p-6 text-center">
+                    <p class="text-6xl font-black text-[#F9C80E]">$2.2M</p>
+                    <p class="mt-2 text-lg font-semibold text-[#006494]">Saved Annually</p>
+                     <p class="text-sm text-gray-500 mt-1">Resulting from process optimizations and efficiency gains.</p>
+                </div>
+                <div class="kpi-card p-6 text-center">
+                    <p class="text-6xl font-black text-[#00A6FB]">30%</p>
+                    <p class="mt-2 text-lg font-semibold text-[#006494]">Reduction in Release Issues</p>
+                     <p class="text-sm text-gray-500 mt-1">By automating regression suites and rollback triggers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencies" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#006494]">Core Competencies Breakdown</h2>
+            <p class="text-center max-w-3xl mx-auto text-gray-600 mb-10">My experience is a blend of deep decisioning expertise, robust DevOps automation, and comprehensive application support, ensuring end-to-end project success.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="chart-container mx-auto h-64 w-64">
+                        <canvas id="decisioningChart"></canvas>
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 text-[#0582CA]">Pega Decisioning & CDH</h3>
+                    <p class="text-gray-500 mt-1">NBA Strategies, PRPC Rules, and Real-Time Personalization.</p>
+                </div>
+                <div>
+                    <div class="chart-container mx-auto h-64 w-64">
+                        <canvas id="supportChart"></canvas>
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 text-[#0582CA]">Application & Infra Support</h3>
+                     <p class="text-gray-500 mt-1">Performance Monitoring, Upgrades, and Incident Resolution.</p>
+                </div>
+                <div>
+                    <div class="chart-container mx-auto h-64 w-64">
+                        <canvas id="devopsChart"></canvas>
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 text-[#0582CA]">DevOps & Automation</h3>
+                     <p class="text-gray-500 mt-1">CI/CD Pipelines, Kubernetes, and Automated Deployments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-impact" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#006494]">Project Impact & Achievements</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-[#0582CA]">T-Mobile (Senior Analyst)</h3>
+                    <p class="text-gray-600 mb-4">Focused on enhancing the Pega CDH platform post-merger, optimizing real-time decisioning, and automating infrastructure management.</p>
+                    <div class="chart-container h-80">
+                        <canvas id="tmobileImpactChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-[#0582CA]">Sprint (Analyst)</h3>
+                    <p class="text-gray-600 mb-4">Led NBA implementation from the ground up, managed a large offer catalog, and drove significant improvements in deployment processes.</p>
+                    <div class="chart-container h-80">
+                        <canvas id="sprintImpactChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills-radar" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#006494]">Technical Skill Ecosystem</h2>
+            <p class="text-center max-w-3xl mx-auto text-gray-600 mb-6">A holistic view of my proficiency across key technology domains, from core Pega development and decisioning to the infrastructure and tools that power enterprise solutions.</p>
+            <div class="chart-container max-w-2xl h-96 md:h-[500px]">
+                <canvas id="skillsRadarChart"></canvas>
+            </div>
+        </section>
+        
+        <section id="timeline">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#006494]">Career Progression</h2>
+            <div class="relative border-l-4 border-[#00A6FB] ml-4 md:ml-0 md:mx-auto">
+                <div class="mb-12 md:flex md:items-center md:justify-between">
+                    <div class="md:w-1/2 md:pr-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#F86624]">
+                            <p class="text-sm font-semibold text-[#0582CA]">Jan 2022 - Jan 2023</p>
+                            <h3 class="text-2xl font-bold text-[#006494]">Application Development Senior Analyst</h3>
+                            <p class="text-md font-semibold text-gray-700">T-Mobile</p>
+                            <p class="mt-2 text-gray-600">Led post-merger Pega CDH enhancements, supported the platform upgrade to Infinity, and managed containerized services with Kubernetes. Focused on high-availability and real-time performance monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block absolute w-4 h-4 bg-[#F86624] rounded-full left-[-10px] top-1/2 -translate-y-1/2"></div>
+                </div>
+
+                <div class="mb-12 md:flex md:flex-row-reverse md:items-center md:justify-between">
+                    <div class="md:w-1/2 md:pl-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-r-4 md:border-l-4 md:border-r-0 border-[#F9C80E]">
+                            <p class="text-sm font-semibold text-[#0582CA]">Mar 2017 - Jan 2022</p>
+                            <h3 class="text-2xl font-bold text-[#006494]">Application Development Analyst</h3>
+                            <p class="text-md font-semibold text-gray-700">Sprint</p>
+                            <p class="mt-2 text-gray-600">Pioneered NBA implementation and managed the full lifecycle of over 200 offer revisions. Drove CI/CD pipeline automation with Jenkins and significantly improved deployment stability and efficiency.</p>
+                        </div>
+                    </div>
+                     <div class="hidden md:block absolute w-4 h-4 bg-[#F9C80E] rounded-full left-[-10px] top-1/2 -translate-y-1/2"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-16 pt-8 border-t border-gray-300">
+            <p class="text-xl font-bold text-[#006494]">Let's Connect</p>
+            <p class="text-gray-600">yeswanths1995@gmail.com | +1 (945) 266-2399</p>
+            <a href="https://www.linkedin.com/in/yeswanth-sunkesula-44023968" class="text-[#0582CA] hover:text-[#F86624] transition-colors">linkedin.com/in/yeswanth-sunkesula</a>
+        </footer>
+
+    </div>
+
+    <script>
+        const chartColors = {
+            blue1: '#00A6FB',
+            blue2: '#0582CA',
+            blue3: '#006494',
+            yellow: '#F9C80E',
+            orange: '#F86624',
+            gray: '#a0aec0'
+        };
+
+        const globalChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#4a5568',
+                        font: {
+                            size: 14
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+        
+        function wrapLabels(label, maxLength = 16) {
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines.filter(line => line.length > 0);
+        }
+
+        new Chart(document.getElementById('decisioningChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['NBA Strategy', 'PRPC Rules', 'Real-Time APIs'],
+                datasets: [{
+                    data: [45, 35, 20],
+                    backgroundColor: [chartColors.blue1, chartColors.yellow, chartColors.orange],
+                    borderColor: '#fff',
+                    borderWidth: 4
+                }]
+            },
+            options: {...globalChartOptions, cutout: '60%'}
+        });
+
+        new Chart(document.getElementById('devopsChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['CI/CD (Jenkins)', 'Containerization (K8s)', 'Deployment Manager'],
+                datasets: [{
+                    data: [50, 30, 20],
+                    backgroundColor: [chartColors.blue2, chartColors.orange, chartColors.yellow],
+                    borderColor: '#fff',
+                    borderWidth: 4
+                }]
+            },
+            options: {...globalChartOptions, cutout: '60%'}
+        });
+
+        new Chart(document.getElementById('supportChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Performance Tuning', 'Platform Upgrades', 'Incident Management'],
+                datasets: [{
+                    data: [15, 15, 70],
+                    backgroundColor: [chartColors.blue3, chartColors.yellow, chartColors.orange],
+                    borderColor: '#fff',
+                    borderWidth: 4
+                }]
+            },
+            options: {...globalChartOptions, cutout: '60%'}
+        });
+        
+        const tmobileImpactData = {
+            labels: ['Platform Upgrade Support', 'Pega PRPC rules', 'Real-Time Monitoring'].map(l => wrapLabels(l)),
+            datasets: [{
+                label: 'Impact Score (Relative)',
+                data: [85, 85, 80],
+                backgroundColor: chartColors.blue1,
+                borderColor: chartColors.blue2,
+                borderWidth: 1,
+                borderRadius: 5
+            }]
+        };
+
+        new Chart(document.getElementById('tmobileImpactChart'), {
+            type: 'bar',
+            data: tmobileImpactData,
+            options: { ...globalChartOptions, indexAxis: 'y', scales: { x: { beginAtZero: true, grid: { display: false } }, y: { grid: { display: false } } } }
+        });
+
+        const sprintImpactData = {
+            labels: ['NBA Implementation', 'Offer Management (200+)', 'CI/CD Automation', 'Manual Error Reduction'].map(l => wrapLabels(l)),
+            datasets: [{
+                label: 'Impact Score (Relative)',
+                data: [95, 90, 85, 75],
+                backgroundColor: chartColors.blue2,
+                borderColor: chartColors.blue3,
+                borderWidth: 1,
+                borderRadius: 5
+            }]
+        };
+
+        new Chart(document.getElementById('sprintImpactChart'), {
+            type: 'bar',
+            data: sprintImpactData,
+            options: { ...globalChartOptions, indexAxis: 'y', scales: { x: { beginAtZero: true, grid: { display: false } }, y: { grid: { display: false } } } }
+        });
+
+        new Chart(document.getElementById('skillsRadarChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Pega Decisioning (CDH)', 'Pega Core Development', 'DevOps & CI/CD', 'Infrastructure & Monitoring', 'Database (SQL/NoSQL)', 'Agile & Project Management'],
+                datasets: [{
+                    label: 'Proficiency Level',
+                    data: [95, 89, 90, 88, 85, 92],
+                    backgroundColor: 'rgba(5, 130, 202, 0.2)',
+                    borderColor: chartColors.blue2,
+                    pointBackgroundColor: chartColors.blue2,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: chartColors.blue2
+                }]
+            },
+            options: {
+                ...globalChartOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: '#e2e8f0' },
+                        grid: { color: '#e2e8f0' },
+                        pointLabels: {
+                            font: { size: 12, weight: 'bold' },
+                            color: '#006494'
+                        },
+                        ticks: {
+                            backdropColor: 'rgba(255, 255, 255, 0.75)',
+                            color: '#4a5568',
+                            stepSize: 20
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
